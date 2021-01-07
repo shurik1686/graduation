@@ -1,0 +1,92 @@
+2021-01-07 12:09:01,680 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-07 12:09:02,025 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 - Finished Spring Data repository scanning in 306 ms. Found 1 JPA repository interfaces.
+2021-01-07 12:09:03,793 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-07 12:09:03,922 INFO  org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.4.22.Final
+2021-01-07 12:09:04,161 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-07 12:09:05,126 INFO  org.hibernate.dialect.Dialect.<init>:170 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-01-07 12:09:05,690 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-07 12:09:05,779 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.shurik16.graduation.model.User.roles] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2021-01-07 12:09:05,946 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.shurik16.graduation.model.User.roles' created in EhcacheManager.
+2021-01-07 12:09:05,963 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.shurik16.graduation.model.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2021-01-07 12:09:05,969 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.shurik16.graduation.model.User' created in EhcacheManager.
+2021-01-07 12:09:06,702 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-07 12:09:06,880 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:434 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-07 12:09:08,197 INFO  r.shurik16.graduation.web.user.AdminRestController.getAll:21 - getAll
+2021-01-07 12:09:08,204 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:648 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-07 12:09:08,216 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'ru.shurik16.graduation.model.User' removed from EhcacheManager.
+2021-01-07 12:09:08,218 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'ru.shurik16.graduation.model.User.roles' removed from EhcacheManager.
+2021-01-07 12:09:39,522 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-07 12:09:39,821 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 - Finished Spring Data repository scanning in 257 ms. Found 1 JPA repository interfaces.
+2021-01-07 12:09:42,918 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2021-01-07 12:09:42,959 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:389 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./projects/graduation/target/classes/cache/ehcache.xml,Cache=users
+2021-01-07 12:09:43,018 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:389 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./projects/graduation/target/classes/cache/ehcache.xml,Cache=users
+2021-01-07 12:09:43,256 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-07 12:09:43,423 INFO  org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.4.22.Final
+2021-01-07 12:09:43,814 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-07 12:09:44,853 INFO  org.hibernate.dialect.Dialect.<init>:170 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-01-07 12:09:45,933 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-07 12:09:46,044 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.shurik16.graduation.model.User.roles] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2021-01-07 12:09:46,076 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.shurik16.graduation.model.User.roles' created in EhcacheManager.
+2021-01-07 12:09:46,082 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.shurik16.graduation.model.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2021-01-07 12:09:46,091 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.shurik16.graduation.model.User' created in EhcacheManager.
+2021-01-07 12:09:47,129 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-07 12:09:47,343 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:434 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-07 12:09:49,466 INFO  r.shurik16.graduation.web.user.AdminRestController.getAll:21 - getAll
+2021-01-07 12:09:49,787 INFO  r.shurik16.graduation.web.user.AdminRestController.create:31 - create User{id=null, email=email@mail.ru, name=userName, enabled=true, roles=[ADMIN]}
+2021-01-07 12:09:49,864 INFO  r.shurik16.graduation.web.user.AdminRestController.create:31 - create User{id=null, email=email@mail.ru, name=userName1, enabled=true, roles=[ADMIN]}
+2021-01-07 12:09:49,870 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2021-01-07 12:09:49,872 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: USERS_UNIQUE_EMAIL_IDX
+2021-01-07 12:09:49,890 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:648 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-07 12:09:49,900 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'ru.shurik16.graduation.model.User' removed from EhcacheManager.
+2021-01-07 12:09:49,901 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'ru.shurik16.graduation.model.User.roles' removed from EhcacheManager.
+2021-01-07 12:09:49,911 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'users' removed from EhcacheManager.
+2021-01-07 12:11:30,223 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-07 12:11:30,492 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 - Finished Spring Data repository scanning in 230 ms. Found 1 JPA repository interfaces.
+2021-01-07 12:11:32,371 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2021-01-07 12:11:32,432 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:389 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./projects/graduation/target/classes/cache/ehcache.xml,Cache=users
+2021-01-07 12:11:32,534 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:389 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./projects/graduation/target/classes/cache/ehcache.xml,Cache=users
+2021-01-07 12:11:32,756 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-07 12:11:32,868 INFO  org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.4.22.Final
+2021-01-07 12:11:33,183 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-07 12:11:33,956 INFO  org.hibernate.dialect.Dialect.<init>:170 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-01-07 12:11:34,549 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-07 12:11:34,643 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.shurik16.graduation.model.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2021-01-07 12:11:34,663 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.shurik16.graduation.model.User' created in EhcacheManager.
+2021-01-07 12:11:34,671 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.shurik16.graduation.model.User.roles] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2021-01-07 12:11:34,683 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.shurik16.graduation.model.User.roles' created in EhcacheManager.
+2021-01-07 12:11:35,385 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-07 12:11:35,599 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:434 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-07 12:11:37,019 INFO  r.shurik16.graduation.web.user.AdminRestController.getAll:21 - getAll
+2021-01-07 12:11:37,283 INFO  r.shurik16.graduation.web.user.AdminRestController.create:31 - create User{id=null, email=email@mail.ru, name=userName, enabled=true, roles=[ADMIN]}
+2021-01-07 12:11:37,343 INFO  r.shurik16.graduation.web.user.AdminRestController.create:31 - create User{id=null, email=email@mail.ru, name=userName1, enabled=true, roles=[ADMIN]}
+2021-01-07 12:11:37,348 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2021-01-07 12:11:37,348 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: USERS_UNIQUE_EMAIL_IDX
+2021-01-07 12:11:37,363 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:648 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-07 12:11:37,373 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'ru.shurik16.graduation.model.User' removed from EhcacheManager.
+2021-01-07 12:11:37,373 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'ru.shurik16.graduation.model.User.roles' removed from EhcacheManager.
+2021-01-07 12:11:37,383 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'users' removed from EhcacheManager.
+2021-01-07 12:14:55,411 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-07 12:14:56,473 INFO  o.s.d.r.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 - Finished Spring Data repository scanning in 853 ms. Found 1 JPA repository interfaces.
+2021-01-07 12:14:59,258 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'users' created in EhcacheManager.
+2021-01-07 12:14:59,331 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:389 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./projects/graduation/target/classes/cache/ehcache.xml,Cache=users
+2021-01-07 12:14:59,403 INFO  org.ehcache.jsr107.Eh107CacheManager.registerObject:389 - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./projects/graduation/target/classes/cache/ehcache.xml,Cache=users
+2021-01-07 12:14:59,628 INFO  org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-07 12:14:59,734 INFO  org.hibernate.Version.logVersion:44 - HHH000412: Hibernate ORM core version 5.4.22.Final
+2021-01-07 12:15:00,055 INFO  org.hibernate.annotations.common.Version.<clinit>:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-07 12:15:00,855 INFO  org.hibernate.dialect.Dialect.<init>:170 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-01-07 12:15:01,343 INFO  org.hibernate.validator.internal.util.Version.<clinit>:21 - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-07 12:15:01,437 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.shurik16.graduation.model.User.roles] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2021-01-07 12:15:01,455 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.shurik16.graduation.model.User.roles' created in EhcacheManager.
+2021-01-07 12:15:01,461 WARN  org.hibernate.orm.cache.createCache:108 - HHH90001006: Missing cache[ru.shurik16.graduation.model.User] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+2021-01-07 12:15:01,468 INFO  org.ehcache.core.EhcacheManager.createCache:305 - Cache 'ru.shurik16.graduation.model.User' created in EhcacheManager.
+2021-01-07 12:15:02,171 INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-07 12:15:02,311 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:434 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-07 12:15:03,666 INFO  r.shurik16.graduation.web.user.AdminRestController.getAll:21 - getAll
+2021-01-07 12:15:03,993 INFO  r.shurik16.graduation.web.user.AdminRestController.create:31 - create User{id=null, email=email@mail.ru, name=userName, enabled=true, roles=[ADMIN]}
+2021-01-07 12:15:04,043 INFO  r.shurik16.graduation.web.user.AdminRestController.create:31 - create User{id=null, email=email@mail.ru, name=userName1, enabled=true, roles=[ADMIN]}
+2021-01-07 12:15:04,043 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:137 - SQL Error: -104, SQLState: 23505
+2021-01-07 12:15:04,043 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions:142 - integrity constraint violation: unique constraint or index violation: USERS_UNIQUE_EMAIL_IDX
+2021-01-07 12:15:04,061 INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:648 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-07 12:15:04,071 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'ru.shurik16.graduation.model.User' removed from EhcacheManager.
+2021-01-07 12:15:04,071 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'ru.shurik16.graduation.model.User.roles' removed from EhcacheManager.
+2021-01-07 12:15:04,081 INFO  org.ehcache.core.EhcacheManager.removeCache:216 - Cache 'users' removed from EhcacheManager.
