@@ -9,6 +9,8 @@ import ru.shurik16.graduation.service.UserService;
 
 import java.util.List;
 
+import static ru.shurik16.graduation.util.ValidationUtil.assureIdConsistent;
+
 @Controller
 public class AdminRestController {
 
@@ -40,7 +42,7 @@ public class AdminRestController {
 
     public void update(User user, int id) {
         log.info("update {} with id={}", user, id);
-        //assureIdConsistent(user, id);
+        /*assureIdConsistent(user, id);*/
         service.update(user);
     }
 

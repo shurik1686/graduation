@@ -37,8 +37,4 @@ public class UserRepository {
         return crudRepository.findAll(SORT_NAME_EMAIL);
     }
 
-
-    public User getWithMeals(int id) {
-        return crudRepository.getWithMeals(id);
-    }
 }

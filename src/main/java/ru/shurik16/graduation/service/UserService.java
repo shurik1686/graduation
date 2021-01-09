@@ -9,8 +9,7 @@ import ru.shurik16.graduation.repository.UserRepository;
 
 import java.util.List;
 
-//import static ru.javawebinar.topjava.util.ValidationUtil.checkNotFound;
-//import static ru.javawebinar.topjava.util.ValidationUtil.checkNotFoundWithId;
+import static ru.shurik16.graduation.util.ValidationUtil.*;
 
 @Service
 public class UserService {
@@ -29,24 +28,16 @@ public class UserService {
 
     @CacheEvict(value = "users", allEntries = true)
     public void delete(int id) {
-     //   checkNotFoundWithId(
-                repository.delete(id);
-                //, id);
+        checkNotFoundWithId(repository.delete(id), id);
     }
 
     public User get(int id) {
-        return
-              //  checkNotFoundWithId(
-                        repository.get(id);
-               //         , id);
+        return checkNotFoundWithId(repository.get(id), id);
     }
 
     public User getByEmail(String email) {
         Assert.notNull(email, "email must not be null");
-        return
-                //checkNotFound(
-                        repository.getByEmail(email);
-                        //, "email=" + email);
+        return checkNotFound(repository.getByEmail(email), "email=" + email);
     }
 
     @Cacheable("users")
@@ -54,18 +45,9 @@ public class UserService {
         return repository.getAll();
     }
 
-    @CacheEvict(value = "users", allEntries = true)
+   // @CacheEvict(value = "users", allEntries = true)
     public void update(User user) {
         Assert.notNull(user, "user must not be null");
-        //checkNotFoundWithId(
-                repository.save(user);
-                //, user.id());
-    }
-
-    public User getWithMeals(int id) {
-        return
-                //checkNotFoundWithId(
-                        repository.getWithMeals(id);
-                        //, id);
+        checkNotFoundWithId(repository.save(user), user.id());
     }
 }
