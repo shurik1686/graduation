@@ -7,13 +7,9 @@ import java.util.List;
 
 @Entity
 @Table(name = "restaurant")
-public class Restaurant extends AbstractBaseEntity {
+public class Restaurant extends AbstractNamedEntity {
 
-    @Column(name = "name", nullable = false)
-    @NotNull
-    private String name;
-
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "restaurant")//, cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "restaurant")//, cascade = CascadeType.REMOVE, orphanRemoval = true)
     @OrderBy("date DESC")
 //    @JsonIgnore
     private List<Restaurant_menu> menus;
@@ -21,21 +17,16 @@ public class Restaurant extends AbstractBaseEntity {
     public Restaurant() {
     }
 
-    public Restaurant(String name) {
-        this.name = name;
-    }
-
     public Restaurant(Integer id, String name) {
-        super(id);
-        this.name = name;
+        super(id,name);
     }
 
-    public String getName() {
-        return name;
+    public Restaurant(String name) {
+        this(new Restaurant(null,name));
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Restaurant(Restaurant restaurant) {
+        this(restaurant.getId(),restaurant.getName());
     }
 
     public List<Restaurant_menu> getRestaurant_menus() {

@@ -1,16 +1,12 @@
 package ru.shurik16.graduation.service;
 
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import ru.shurik16.graduation.model.Restaurant;
-import ru.shurik16.graduation.model.User;
 import ru.shurik16.graduation.repository.RestaurantRepository;
 
 import java.util.List;
 
-import static ru.shurik16.graduation.util.ValidationUtil.checkNotFound;
 import static ru.shurik16.graduation.util.ValidationUtil.checkNotFoundWithId;
 
 @Service
@@ -23,7 +19,7 @@ public class RestaurantService {
     }
 
     public Restaurant create(Restaurant restaurant) {
-        Assert.notNull(restaurant, "user must not be null");
+        Assert.notNull(restaurant, "restaurant must not be null");
         return repository.save(restaurant);
     }
 
@@ -45,7 +41,7 @@ public class RestaurantService {
     }
 
     public void update(Restaurant restaurant) {
-        Assert.notNull(restaurant, "user must not be null");
+        Assert.notNull(restaurant, "restaurant must not be null");
         checkNotFoundWithId(repository.save(restaurant), restaurant.id());
     }
 }

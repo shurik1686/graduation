@@ -1,9 +1,9 @@
 package ru.shurik16.graduation.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
-import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -13,16 +13,11 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "restaurant_menu")
-public class Restaurant_menu extends AbstractBaseEntity {
+public class Restaurant_menu extends AbstractNamedEntity {
 
     @Column(name = "date", nullable = false)
     @NotNull
     private LocalDateTime date;
-
-    @Column(name = "name", nullable = false)
-    @NotBlank
-    @Size(min = 2, max = 120)
-    private String name;
 
     @Column(name = "price", nullable = false)
     @NotBlank
@@ -33,7 +28,23 @@ public class Restaurant_menu extends AbstractBaseEntity {
     @JoinColumn(name = "restaurant_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
 //    @NotNull
+    @JsonIgnore
     private Restaurant restaurant;
+
+    public Restaurant_menu(Integer id, String name, @NotNull LocalDateTime date, @NotBlank @Size(min = 2, max = 120) String price, Restaurant restaurant) {
+        super(id, name);
+        this.date = date;
+        this.price = price;
+        this.restaurant = restaurant;
+    }
+
+    public Restaurant_menu(Restaurant_menu menu) {
+        this(menu.id,menu.name,menu.date,menu.price,menu.restaurant);
+    }
+
+    public Restaurant_menu(String name, @NotNull LocalDateTime date, @NotBlank @Size(min = 2, max = 120) String price, Restaurant restaurant) {
+        this(new Restaurant_menu(null, name, date, price, restaurant));
+    }
 
     public Restaurant_menu() {
     }
@@ -44,14 +55,6 @@ public class Restaurant_menu extends AbstractBaseEntity {
 
     public void setDate(LocalDateTime date) {
         this.date = date;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getPrice() {
