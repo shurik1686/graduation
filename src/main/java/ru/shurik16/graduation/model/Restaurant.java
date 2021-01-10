@@ -1,5 +1,6 @@
 package ru.shurik16.graduation.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
@@ -11,7 +12,7 @@ public class Restaurant extends AbstractNamedEntity {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "restaurant")//, cascade = CascadeType.REMOVE, orphanRemoval = true)
     @OrderBy("date DESC")
-//    @JsonIgnore
+    @JsonIgnore
     private List<Restaurant_menu> menus;
 
     public Restaurant() {

@@ -24,11 +24,11 @@ public class Restaurant_menu extends AbstractNamedEntity {
     @Size(min = 2, max = 120)
     private String price;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "restaurant_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
 //    @NotNull
-    @JsonIgnore
+    //@JsonIgnore
     private Restaurant restaurant;
 
     public Restaurant_menu(Integer id, String name, @NotNull LocalDateTime date, @NotBlank @Size(min = 2, max = 120) String price, Restaurant restaurant) {
